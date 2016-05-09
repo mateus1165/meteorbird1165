@@ -1,0 +1,9 @@
+<template name='profileForm'>
+  <form class='form-horizontal'>
+    {{#with currentUser.profile}}
+    <input type="text" class="form-control" placeholder="Nome" value="{{name}}"/>
+    <input type="text" class="form-control" placeholder="Descrição" value='{{about}}'/>
+    <button class="btn btn-success">Atualizar</button>
+    {{/with}}
+  </form>
+</template>
